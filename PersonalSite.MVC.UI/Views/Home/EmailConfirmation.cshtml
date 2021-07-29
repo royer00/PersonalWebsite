@@ -1,0 +1,18 @@
+﻿@model PersonalSite.MVC.UI.Models.ContactViewModel
+
+
+<section class="resume-section">
+    <div class="resume-section-content col-md-9">
+        <div id="contact" >
+            <div class="mt-3 offset-1 col-md-7 mb-3" style="padding: .5em">
+                @if (Model != null)
+                {
+                    @*<button id="email-confirm-close" style="font-size: 2em;">&times</button>*@
+                    <h3 id="confirm-header" class="offset-4 col-md-9">Thanks for reaching out @Model.Name!</h3>
+                    <p id="confirm-message" class="offset-4 col-md-8">I will respond to you as soon as possible!</p>
+                    <div id="confirm-iframe" class=" offset-4 col-md-8" style="width:100%;height:0;padding-bottom:30%;"><iframe src="https://giphy.com/embed/KJ1f5iTl4Oo7u" width="100%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/just-thanks-KJ1f5iTl4Oo7u">via GIPHY</a></p>
+                }
+            </div>
+        </div>
+    </div>
+</section>
